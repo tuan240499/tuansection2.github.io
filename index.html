@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Section 2</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inter%3A400"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Instrument+Serif%3A400"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400"
+    />
+    <link rel="stylesheet" href="./styles/Section2.css" />
+  </head>
+  <body>
+    <div class="service-content">
+      <p class="floral-decor">Floral &amp; Decor</p>
+      <div class="auto-group">
+        <div class="frame-wrapper">
+          <div class="rectangle"></div>
+          <div class="frame">
+            <div class="inner-frame" id="frame">
+              <div class="sub-frame">
+                <div class="sub-frame-inner">
+                  <p class="floral">Floral</p>
+                  <img
+                    class="fi-chevron-down"
+                    src="./assets/fi-chevron-down-P73.png"
+                    onclick="toggleContent('floral-content')"
+                  />
+                </div>
+              </div>
+              <p id="floral-content" class="content">
+                The Design is the imagination, creativity and inspiration that
+                makes your event unique. We work closely with you to sleuth out
+                your style and then use that insight to develop every aesthetic
+                component of your event from stationery and lighting to flowers
+                and furniture.
+              </p>
+            </div>
+            <div class="decor-frame">
+              <div class="decor-frame-inner">
+                <p class="decor-selection-text">Decor selection</p>
+                <img
+                  class="fi-chevron-down"
+                  src="./assets/fi-chevron-down-P1X.png"
+                />
+              </div>
+
+              <div class="line-9"></div>
+              <div class="hair-makeup-frame">
+                <p class="hair-makeup-text">Hair &amp; makeup</p>
+                <img
+                  class="fi-chevron-down"
+                  src="./assets/fi-chevron-down-JsX.png"
+                />
+              </div>
+
+              <div class="line-10"></div>
+              <div class="lighting-sound-frame">
+                <p class="lighting-sound-text">Lighting &amp; Sound</p>
+                <img
+                  class="fi-chevron-down"
+                  src="./assets/fi-chevron-down.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rectangle-74"></div>
+      </div>
+    </div>
+    <script>
+      function toggleContent(contentId) {
+        var content = document.getElementById(contentId);
+        content.classList.toggle("content-hidden");
+      }
+    </script>
+  </body>
+</html>
